@@ -68,6 +68,7 @@
             this.btncancelar.TabIndex = 19;
             this.btncancelar.Text = "CANCELAR";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // BusquedaDesaparecido
             // 

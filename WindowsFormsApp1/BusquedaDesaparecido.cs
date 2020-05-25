@@ -51,5 +51,10 @@ namespace WindowsFormsApp1
         {
             
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
