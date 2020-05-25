@@ -71,26 +71,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusquedaDesaparecido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaDesaparecido.Designer.cs">
+      <DependentUpon>BusquedaDesaparecido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaEntrevistado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaEntrevistado.Designer.cs">
+      <DependentUpon>BusquedaEntrevistado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion_db.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Desaparecido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Desaparecido.Designer.cs">
+      <DependentUpon>Desaparecido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persona_Entrevistada.cs">
+    <Compile Include="Entrevistado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persona_Entrevistada.Designer.cs">
-      <DependentUpon>Persona_Entrevistada.cs</DependentUpon>
+    <Compile Include="Entrevistado.Designer.cs">
+      <DependentUpon>Entrevistado.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="BusquedaDesaparecido.resx">
+      <DependentUpon>BusquedaDesaparecido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persona_Entrevistada.resx">
-      <DependentUpon>Persona_Entrevistada.cs</DependentUpon>
+    <EmbeddedResource Include="BusquedaEntrevistado.resx">
+      <DependentUpon>BusquedaEntrevistado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desaparecido.resx">
+      <DependentUpon>Desaparecido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrevistado.resx">
+      <DependentUpon>Entrevistado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
