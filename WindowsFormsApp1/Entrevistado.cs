@@ -40,12 +40,13 @@ namespace WindowsFormsApp1
                 txtFechaDeEntrevista.Text = tbl.Rows[posicion].ItemArray[2].ToString();
                 txtFechaDeNacimiento.Text = tbl.Rows[posicion].ItemArray[3].ToString();
                 txtPais.Text = tbl.Rows[posicion].ItemArray[4].ToString();
+                
 
                 lblnregistros.Text = (posicion + 1) + " de " + tbl.Rows.Count;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No hay Datos que mostrar", "Registros de Cliente",
+                MessageBox.Show("No hay Datos que mostrar", "Persona Entrevistada",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 limpiar_cajas();
             }
@@ -66,7 +67,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                MessageBox.Show("Primer Registro...", "Registros de Cliente",
+                MessageBox.Show("Primer Registro...", "Persona Entrevistada",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -80,7 +81,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                MessageBox.Show("Ultimo Registro...", "Registros de Cliente",
+                MessageBox.Show("Ultimo Registro...", "Persona Entrevistada",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

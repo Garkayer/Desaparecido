@@ -31,8 +31,6 @@
             this.grdBusquedaDesaparecido = new System.Windows.Forms.DataGridView();
             this.btnseleccionar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
-            this.lblbuscar = new System.Windows.Forms.Label();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdBusquedaDesaparecido)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,32 +69,11 @@
             this.btncancelar.Text = "CANCELAR";
             this.btncancelar.UseVisualStyleBackColor = true;
             // 
-            // lblbuscar
-            // 
-            this.lblbuscar.AutoSize = true;
-            this.lblbuscar.Location = new System.Drawing.Point(10, 9);
-            this.lblbuscar.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblbuscar.Name = "lblbuscar";
-            this.lblbuscar.Size = new System.Drawing.Size(54, 13);
-            this.lblbuscar.TabIndex = 20;
-            this.lblbuscar.Text = "BUSCAR:";
-            // 
-            // txtbuscar
-            // 
-            this.txtbuscar.Location = new System.Drawing.Point(66, 6);
-            this.txtbuscar.Margin = new System.Windows.Forms.Padding(1);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(295, 20);
-            this.txtbuscar.TabIndex = 21;
-            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
-            // 
             // BusquedaDesaparecido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtbuscar);
-            this.Controls.Add(this.lblbuscar);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnseleccionar);
             this.Controls.Add(this.grdBusquedaDesaparecido);
@@ -105,7 +82,6 @@
             this.Load += new System.EventHandler(this.BusquedaDesaparecido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdBusquedaDesaparecido)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -114,7 +90,5 @@
         private System.Windows.Forms.DataGridView grdBusquedaDesaparecido;
         private System.Windows.Forms.Button btnseleccionar;
         private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.Label lblbuscar;
-        private System.Windows.Forms.TextBox txtbuscar;
     }
 }

@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
         {
-            filtrar_datos(txtbuscar.Text);
+           
         }
     }
 }

@@ -40,6 +40,7 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.grbDatosEntrevistado = new System.Windows.Forms.GroupBox();
+            this.txtFechaDeEntrevista = new System.Windows.Forms.TextBox();
             this.lblIdEntrevistado = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.lbldireccion = new System.Windows.Forms.Label();
             this.txtNombreCompleto = new System.Windows.Forms.TextBox();
             this.lblnombre = new System.Windows.Forms.Label();
-            this.txtFechaDeEntrevista = new System.Windows.Forms.TextBox();
             this.grbNavegacion.SuspendLayout();
             this.grbEdicion.SuspendLayout();
             this.grbDatosEntrevistado.SuspendLayout();
@@ -210,6 +210,14 @@
             this.grbDatosEntrevistado.TabStop = false;
             this.grbDatosEntrevistado.Text = "Datos de entrevistado";
             // 
+            // txtFechaDeEntrevista
+            // 
+            this.txtFechaDeEntrevista.Location = new System.Drawing.Point(119, 103);
+            this.txtFechaDeEntrevista.Margin = new System.Windows.Forms.Padding(1);
+            this.txtFechaDeEntrevista.Name = "txtFechaDeEntrevista";
+            this.txtFechaDeEntrevista.Size = new System.Drawing.Size(205, 20);
+            this.txtFechaDeEntrevista.TabIndex = 13;
+            // 
             // lblIdEntrevistado
             // 
             this.lblIdEntrevistado.AutoSize = true;
@@ -301,14 +309,6 @@
             this.lblnombre.Size = new System.Drawing.Size(93, 13);
             this.lblnombre.TabIndex = 2;
             this.lblnombre.Text = "Nombre completo:";
-            // 
-            // txtFechaDeEntrevista
-            // 
-            this.txtFechaDeEntrevista.Location = new System.Drawing.Point(119, 103);
-            this.txtFechaDeEntrevista.Margin = new System.Windows.Forms.Padding(1);
-            this.txtFechaDeEntrevista.Name = "txtFechaDeEntrevista";
-            this.txtFechaDeEntrevista.Size = new System.Drawing.Size(205, 20);
-            this.txtFechaDeEntrevista.TabIndex = 13;
             // 
             // Entrevistado
             // 
