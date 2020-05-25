@@ -51,6 +51,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.grbDatosDesaparecido.SuspendLayout();
             this.grbNavegacion.SuspendLayout();
             this.grbEdicion.SuspendLayout();
@@ -78,7 +79,7 @@
             this.grbDatosDesaparecido.Size = new System.Drawing.Size(459, 281);
             this.grbDatosDesaparecido.TabIndex = 8;
             this.grbDatosDesaparecido.TabStop = false;
-            this.grbDatosDesaparecido.Text = "Datos de entrevistado";
+            this.grbDatosDesaparecido.Text = "Datos de persona desaparecida";
             // 
             // txtEdad
             // 
@@ -310,11 +311,22 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(673, 398);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 40);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Volver al menú principal";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Desaparecido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grbEdicion);
             this.Controls.Add(this.grbNavegacion);
             this.Controls.Add(this.grbDatosDesaparecido);
@@ -355,5 +367,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button button1;
     }
 }

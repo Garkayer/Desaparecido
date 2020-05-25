@@ -189,6 +189,20 @@ namespace WindowsFormsApp1
                 mostrarDatos();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            Principal Principal = new Principal();
+            Principal.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+            Desaparecido Desaparecido = new Desaparecido();
+            Desaparecido.Show();
+        }
     }
 }
 

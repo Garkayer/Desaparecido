@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.Principal.Hide();
+            Program Principal.Hide();
             Desaparecido Desaparecido = new Desaparecido();
             Desaparecido.Show();
         }
@@ -34,6 +34,11 @@ namespace WindowsFormsApp1
             Program.Principal.Hide();
             Entrevistado Entrevistado = new Entrevistado();
             Entrevistado.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

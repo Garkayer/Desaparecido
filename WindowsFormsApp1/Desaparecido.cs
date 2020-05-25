@@ -188,6 +188,14 @@ namespace WindowsFormsApp1
                 mostrarDatos();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            Principal Principal = new Principal();
+            Principal.Show();
+
+        }
     }
 }
 

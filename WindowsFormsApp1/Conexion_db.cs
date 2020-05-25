@@ -50,40 +50,8 @@ namespace WindowsFormsApp1
         }
 
 
-        public void mantenimiento_datos_alquiler(String[] datos, String accion)
-        {
-            String sql = "";
-            if (accion == "nuevo")
-            {
-                sql = "INSERT INTO  (IdClientes, IdPelicula, fechaPrestamo, fechaDevolucion, valor) VALUES (" +
-
-                "'" + datos[1] + "'," +
-                "'" + datos[2] + "'," +
-                "'" + datos[3] + "'," +
-                "'" + datos[4] + "'," +
-                "'" + datos[5] + "'" +
-                ")";
-            }
-            else if (accion == "modificar")
-            {
-                sql = "UPDATE alquiler SET" +
-
-                " IdClientes             = '" + datos[1] + "'," +
-                " IdPelicula             = '" + datos[2] + "'," +
-                " fechaPrestamo          = '" + datos[3] + "'," +
-                " fechaDevolucion        = '" + datos[4] + "'," +
-                " valor                  = '" + datos[5] + "'" +
-                 " WHERE IdAlquiler      = '" + datos[0] + "'";
-            }
-
-            else if (accion == "eliminar")
-
-            {
-                sql = " DELETE alquiler FROM alquiler WHERE IdAlquiler = '" + datos[0] + "'";
-            }
-
-            procesarSQL(sql);
-        }
+        
+        
 
 
         public void mantenimiento_datos_desaparecido(String[] datos, String accion)
