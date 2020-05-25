@@ -189,6 +189,7 @@
             this.grbNavegacion.Controls.Add(this.btnsiguiente);
             this.grbNavegacion.Controls.Add(this.btnprimero);
             this.grbNavegacion.Controls.Add(this.btnanterior);
+            this.grbNavegacion.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbNavegacion.Location = new System.Drawing.Point(10, 344);
             this.grbNavegacion.Margin = new System.Windows.Forms.Padding(1);
             this.grbNavegacion.Name = "grbNavegacion";
@@ -204,7 +205,7 @@
             this.lblnregistros.Location = new System.Drawing.Point(83, 26);
             this.lblnregistros.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblnregistros.Name = "lblnregistros";
-            this.lblnregistros.Size = new System.Drawing.Size(0, 13);
+            this.lblnregistros.Size = new System.Drawing.Size(0, 14);
             this.lblnregistros.TabIndex = 13;
             // 
             // btnultimo
@@ -258,21 +259,23 @@
             this.grbEdicion.Controls.Add(this.btnBuscar);
             this.grbEdicion.Controls.Add(this.btnModificar);
             this.grbEdicion.Controls.Add(this.btnNuevo);
+            this.grbEdicion.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbEdicion.Location = new System.Drawing.Point(263, 344);
             this.grbEdicion.Margin = new System.Windows.Forms.Padding(1);
             this.grbEdicion.Name = "grbEdicion";
             this.grbEdicion.Padding = new System.Windows.Forms.Padding(1);
-            this.grbEdicion.Size = new System.Drawing.Size(236, 57);
+            this.grbEdicion.Size = new System.Drawing.Size(302, 57);
             this.grbEdicion.TabIndex = 10;
             this.grbEdicion.TabStop = false;
             this.grbEdicion.Text = "Edicion";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(107, 15);
+            this.btnEliminar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(147, 15);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(1);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(62, 33);
+            this.btnEliminar.Size = new System.Drawing.Size(75, 33);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -280,7 +283,8 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(171, 16);
+            this.btnBuscar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(224, 15);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(1);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(62, 33);
@@ -291,10 +295,11 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(45, 16);
+            this.btnModificar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(63, 15);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(1);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(62, 33);
+            this.btnModificar.Size = new System.Drawing.Size(82, 33);
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -302,10 +307,11 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(2, 16);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(1);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(40, 33);
+            this.btnNuevo.Size = new System.Drawing.Size(59, 33);
             this.btnNuevo.TabIndex = 2;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -313,6 +319,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(673, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 40);
