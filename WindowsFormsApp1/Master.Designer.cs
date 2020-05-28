@@ -29,29 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Master));
             System.Windows.Forms.Label idDesaparecidoLabel;
             System.Windows.Forms.Label nombreCompletoLabel;
             System.Windows.Forms.Label edadLabel;
             System.Windows.Forms.Label sexoLabel;
             System.Windows.Forms.Label preferenciaSexualLabel;
             System.Windows.Forms.Label fecha_de_nacimientoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Master));
             this.busquedaDataSet = new WindowsFormsApp1.BusquedaDataSet();
             this.desaparecidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desaparecidoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.DesaparecidoTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp1.BusquedaDataSetTableAdapters.TableAdapterManager();
+            this.entrevistadoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.EntrevistadoTableAdapter();
             this.desaparecidoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.desaparecidoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idDesaparecidoComboBox = new System.Windows.Forms.ComboBox();
             this.nombreCompletoComboBox = new System.Windows.Forms.ComboBox();
@@ -60,13 +61,13 @@
             this.preferenciaSexualComboBox = new System.Windows.Forms.ComboBox();
             this.fecha_de_nacimientoComboBox = new System.Windows.Forms.ComboBox();
             this.entrevistadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.entrevistadoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.EntrevistadoTableAdapter();
-            this.entrevistadoDataGridView = new System.Windows.Forms.DataGridView();
+            this.Pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEntrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.entrevistadoDataGridView = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             idDesaparecidoLabel = new System.Windows.Forms.Label();
             nombreCompletoLabel = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
@@ -80,6 +81,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.entrevistadoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entrevistadoDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idDesaparecidoLabel
+            // 
+            idDesaparecidoLabel.AutoSize = true;
+            idDesaparecidoLabel.Location = new System.Drawing.Point(24, 58);
+            idDesaparecidoLabel.Name = "idDesaparecidoLabel";
+            idDesaparecidoLabel.Size = new System.Drawing.Size(76, 13);
+            idDesaparecidoLabel.TabIndex = 1;
+            idDesaparecidoLabel.Text = "Desaparecido:";
+            // 
+            // nombreCompletoLabel
+            // 
+            nombreCompletoLabel.AutoSize = true;
+            nombreCompletoLabel.Location = new System.Drawing.Point(24, 85);
+            nombreCompletoLabel.Name = "nombreCompletoLabel";
+            nombreCompletoLabel.Size = new System.Drawing.Size(94, 13);
+            nombreCompletoLabel.TabIndex = 3;
+            nombreCompletoLabel.Text = "Nombre Completo:";
+            // 
+            // edadLabel
+            // 
+            edadLabel.AutoSize = true;
+            edadLabel.Location = new System.Drawing.Point(24, 112);
+            edadLabel.Name = "edadLabel";
+            edadLabel.Size = new System.Drawing.Size(35, 13);
+            edadLabel.TabIndex = 5;
+            edadLabel.Text = "Edad:";
+            // 
+            // sexoLabel
+            // 
+            sexoLabel.AutoSize = true;
+            sexoLabel.Location = new System.Drawing.Point(24, 139);
+            sexoLabel.Name = "sexoLabel";
+            sexoLabel.Size = new System.Drawing.Size(34, 13);
+            sexoLabel.TabIndex = 7;
+            sexoLabel.Text = "Sexo:";
+            // 
+            // preferenciaSexualLabel
+            // 
+            preferenciaSexualLabel.AutoSize = true;
+            preferenciaSexualLabel.Location = new System.Drawing.Point(24, 166);
+            preferenciaSexualLabel.Name = "preferenciaSexualLabel";
+            preferenciaSexualLabel.Size = new System.Drawing.Size(99, 13);
+            preferenciaSexualLabel.TabIndex = 9;
+            preferenciaSexualLabel.Text = "Preferencia Sexual:";
+            // 
+            // fecha_de_nacimientoLabel
+            // 
+            fecha_de_nacimientoLabel.AutoSize = true;
+            fecha_de_nacimientoLabel.Location = new System.Drawing.Point(24, 193);
+            fecha_de_nacimientoLabel.Name = "fecha_de_nacimientoLabel";
+            fecha_de_nacimientoLabel.Size = new System.Drawing.Size(109, 13);
+            fecha_de_nacimientoLabel.TabIndex = 11;
+            fecha_de_nacimientoLabel.Text = "Fecha de nacimiento:";
             // 
             // busquedaDataSet
             // 
@@ -101,6 +156,10 @@
             this.tableAdapterManager.DesaparecidoTableAdapter = this.desaparecidoTableAdapter;
             this.tableAdapterManager.EntrevistadoTableAdapter = this.entrevistadoTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.BusquedaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // entrevistadoTableAdapter
+            // 
+            this.entrevistadoTableAdapter.ClearBeforeFill = true;
             // 
             // desaparecidoBindingNavigator
             // 
@@ -131,6 +190,31 @@
             this.desaparecidoBindingNavigator.Size = new System.Drawing.Size(800, 25);
             this.desaparecidoBindingNavigator.TabIndex = 0;
             this.desaparecidoBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -164,17 +248,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -182,7 +259,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -191,49 +268,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // desaparecidoBindingNavigatorSaveItem
             // 
             this.desaparecidoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.desaparecidoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("desaparecidoBindingNavigatorSaveItem.Image")));
             this.desaparecidoBindingNavigatorSaveItem.Name = "desaparecidoBindingNavigatorSaveItem";
-            this.desaparecidoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.desaparecidoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.desaparecidoBindingNavigatorSaveItem.Text = "Guardar datos";
             this.desaparecidoBindingNavigatorSaveItem.Click += new System.EventHandler(this.desaparecidoBindingNavigatorSaveItem_Click_1);
-            // 
-            // idDesaparecidoLabel
-            // 
-            idDesaparecidoLabel.AutoSize = true;
-            idDesaparecidoLabel.Location = new System.Drawing.Point(24, 58);
-            idDesaparecidoLabel.Name = "idDesaparecidoLabel";
-            idDesaparecidoLabel.Size = new System.Drawing.Size(76, 13);
-            idDesaparecidoLabel.TabIndex = 1;
-            idDesaparecidoLabel.Text = "Desaparecido:";
             // 
             // idDesaparecidoComboBox
             // 
@@ -244,15 +294,6 @@
             this.idDesaparecidoComboBox.Size = new System.Drawing.Size(121, 21);
             this.idDesaparecidoComboBox.TabIndex = 2;
             // 
-            // nombreCompletoLabel
-            // 
-            nombreCompletoLabel.AutoSize = true;
-            nombreCompletoLabel.Location = new System.Drawing.Point(24, 85);
-            nombreCompletoLabel.Name = "nombreCompletoLabel";
-            nombreCompletoLabel.Size = new System.Drawing.Size(94, 13);
-            nombreCompletoLabel.TabIndex = 3;
-            nombreCompletoLabel.Text = "Nombre Completo:";
-            // 
             // nombreCompletoComboBox
             // 
             this.nombreCompletoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "NombreCompleto", true));
@@ -261,15 +302,6 @@
             this.nombreCompletoComboBox.Name = "nombreCompletoComboBox";
             this.nombreCompletoComboBox.Size = new System.Drawing.Size(121, 21);
             this.nombreCompletoComboBox.TabIndex = 4;
-            // 
-            // edadLabel
-            // 
-            edadLabel.AutoSize = true;
-            edadLabel.Location = new System.Drawing.Point(24, 112);
-            edadLabel.Name = "edadLabel";
-            edadLabel.Size = new System.Drawing.Size(35, 13);
-            edadLabel.TabIndex = 5;
-            edadLabel.Text = "Edad:";
             // 
             // edadComboBox
             // 
@@ -280,15 +312,6 @@
             this.edadComboBox.Size = new System.Drawing.Size(121, 21);
             this.edadComboBox.TabIndex = 6;
             // 
-            // sexoLabel
-            // 
-            sexoLabel.AutoSize = true;
-            sexoLabel.Location = new System.Drawing.Point(24, 139);
-            sexoLabel.Name = "sexoLabel";
-            sexoLabel.Size = new System.Drawing.Size(34, 13);
-            sexoLabel.TabIndex = 7;
-            sexoLabel.Text = "Sexo:";
-            // 
             // sexoComboBox
             // 
             this.sexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "Sexo", true));
@@ -298,15 +321,6 @@
             this.sexoComboBox.Size = new System.Drawing.Size(121, 21);
             this.sexoComboBox.TabIndex = 8;
             // 
-            // preferenciaSexualLabel
-            // 
-            preferenciaSexualLabel.AutoSize = true;
-            preferenciaSexualLabel.Location = new System.Drawing.Point(24, 166);
-            preferenciaSexualLabel.Name = "preferenciaSexualLabel";
-            preferenciaSexualLabel.Size = new System.Drawing.Size(99, 13);
-            preferenciaSexualLabel.TabIndex = 9;
-            preferenciaSexualLabel.Text = "Preferencia Sexual:";
-            // 
             // preferenciaSexualComboBox
             // 
             this.preferenciaSexualComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "PreferenciaSexual", true));
@@ -315,15 +329,6 @@
             this.preferenciaSexualComboBox.Name = "preferenciaSexualComboBox";
             this.preferenciaSexualComboBox.Size = new System.Drawing.Size(121, 21);
             this.preferenciaSexualComboBox.TabIndex = 10;
-            // 
-            // fecha_de_nacimientoLabel
-            // 
-            fecha_de_nacimientoLabel.AutoSize = true;
-            fecha_de_nacimientoLabel.Location = new System.Drawing.Point(24, 193);
-            fecha_de_nacimientoLabel.Name = "fecha_de_nacimientoLabel";
-            fecha_de_nacimientoLabel.Size = new System.Drawing.Size(109, 13);
-            fecha_de_nacimientoLabel.TabIndex = 11;
-            fecha_de_nacimientoLabel.Text = "Fecha de nacimiento:";
             // 
             // fecha_de_nacimientoComboBox
             // 
@@ -339,25 +344,29 @@
             this.entrevistadoBindingSource.DataMember = "Entrevistado";
             this.entrevistadoBindingSource.DataSource = this.busquedaDataSet;
             // 
-            // entrevistadoTableAdapter
+            // Pais
             // 
-            this.entrevistadoTableAdapter.ClearBeforeFill = true;
+            this.Pais.DataPropertyName = "Pais";
+            this.Pais.HeaderText = "Pais";
+            this.Pais.Name = "Pais";
             // 
-            // entrevistadoDataGridView
+            // FechaNacimiento
             // 
-            this.entrevistadoDataGridView.AutoGenerateColumns = false;
-            this.entrevistadoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.entrevistadoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.entrevistadoDataGridView.DataSource = this.entrevistadoBindingSource;
-            this.entrevistadoDataGridView.Location = new System.Drawing.Point(27, 230);
-            this.entrevistadoDataGridView.Name = "entrevistadoDataGridView";
-            this.entrevistadoDataGridView.Size = new System.Drawing.Size(542, 220);
-            this.entrevistadoDataGridView.TabIndex = 13;
+            this.FechaNacimiento.DataPropertyName = "FechaNacimiento";
+            this.FechaNacimiento.HeaderText = "FechaNacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            // 
+            // FechaEntrevista
+            // 
+            this.FechaEntrevista.DataPropertyName = "FechaEntrevista";
+            this.FechaEntrevista.HeaderText = "FechaEntrevista";
+            this.FechaEntrevista.Name = "FechaEntrevista";
+            // 
+            // NombreCompleto
+            // 
+            this.NombreCompleto.DataPropertyName = "NombreCompleto";
+            this.NombreCompleto.HeaderText = "NombreCompleto";
+            this.NombreCompleto.Name = "NombreCompleto";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -365,36 +374,41 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "IdEntrevistado";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
-            // dataGridViewTextBoxColumn2
+            // entrevistadoDataGridView
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreCompleto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NombreCompleto";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.entrevistadoDataGridView.AutoGenerateColumns = false;
+            this.entrevistadoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.entrevistadoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.NombreCompleto,
+            this.FechaEntrevista,
+            this.FechaNacimiento,
+            this.Pais});
+            this.entrevistadoDataGridView.DataSource = this.entrevistadoBindingSource;
+            this.entrevistadoDataGridView.Location = new System.Drawing.Point(27, 230);
+            this.entrevistadoDataGridView.Name = "entrevistadoDataGridView";
+            this.entrevistadoDataGridView.Size = new System.Drawing.Size(542, 220);
+            this.entrevistadoDataGridView.TabIndex = 13;
+            this.entrevistadoDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.entrevistadoDataGridView_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn3
+            // button1
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FechaEntrevista";
-            this.dataGridViewTextBoxColumn3.HeaderText = "FechaEntrevista";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "FechaNacimiento";
-            this.dataGridViewTextBoxColumn4.HeaderText = "FechaNacimiento";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Pais";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Pais";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.button1.Location = new System.Drawing.Point(600, 243);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Volver al menú principal";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 575);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.entrevistadoDataGridView);
             this.Controls.Add(idDesaparecidoLabel);
             this.Controls.Add(this.idDesaparecidoComboBox);
@@ -451,11 +465,12 @@
         private System.Windows.Forms.ComboBox preferenciaSexualComboBox;
         private System.Windows.Forms.ComboBox fecha_de_nacimientoComboBox;
         private System.Windows.Forms.BindingSource entrevistadoBindingSource;
-        private System.Windows.Forms.DataGridView entrevistadoDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pais;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaEntrevista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridView entrevistadoDataGridView;
+        private System.Windows.Forms.Button button1;
     }
 }

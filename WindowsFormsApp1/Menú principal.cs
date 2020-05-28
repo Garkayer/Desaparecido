@@ -40,5 +40,12 @@ namespace WindowsFormsApp1
         {
             Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Program.Principal.Hide();
+            Master Master = new Master();
+            Master.Show();
+        }
     }
 }

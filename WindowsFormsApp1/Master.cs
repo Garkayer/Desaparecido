@@ -41,5 +41,17 @@ namespace WindowsFormsApp1
             this.desaparecidoTableAdapter.Fill(this.busquedaDataSet.Desaparecido);
 
         }
+
+        private void entrevistadoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            Principal Principal = new Principal();
+            Principal.Show();
+        }
     }
 }
