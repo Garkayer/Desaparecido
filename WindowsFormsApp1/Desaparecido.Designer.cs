@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Desaparecido));
             this.grbDatosDesaparecido = new System.Windows.Forms.GroupBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.lblIdDesaparecido = new System.Windows.Forms.Label();
@@ -60,6 +61,8 @@
             // grbDatosDesaparecido
             // 
             this.grbDatosDesaparecido.BackColor = System.Drawing.Color.Yellow;
+            this.grbDatosDesaparecido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbDatosDesaparecido.BackgroundImage")));
+            this.grbDatosDesaparecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.grbDatosDesaparecido.Controls.Add(this.txtEdad);
             this.grbDatosDesaparecido.Controls.Add(this.lblIdDesaparecido);
             this.grbDatosDesaparecido.Controls.Add(this.textBox6);
@@ -72,21 +75,22 @@
             this.grbDatosDesaparecido.Controls.Add(this.txtNombreCompleto);
             this.grbDatosDesaparecido.Controls.Add(this.lblnombre);
             this.grbDatosDesaparecido.Enabled = false;
+            this.grbDatosDesaparecido.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDatosDesaparecido.Location = new System.Drawing.Point(10, 20);
             this.grbDatosDesaparecido.Margin = new System.Windows.Forms.Padding(1);
             this.grbDatosDesaparecido.Name = "grbDatosDesaparecido";
             this.grbDatosDesaparecido.Padding = new System.Windows.Forms.Padding(1);
-            this.grbDatosDesaparecido.Size = new System.Drawing.Size(459, 281);
+            this.grbDatosDesaparecido.Size = new System.Drawing.Size(747, 322);
             this.grbDatosDesaparecido.TabIndex = 8;
             this.grbDatosDesaparecido.TabStop = false;
             this.grbDatosDesaparecido.Text = "Datos de persona desaparecida";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(119, 103);
+            this.txtEdad.Location = new System.Drawing.Point(195, 103);
             this.txtEdad.Margin = new System.Windows.Forms.Padding(1);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(205, 20);
+            this.txtEdad.Size = new System.Drawing.Size(205, 36);
             this.txtEdad.TabIndex = 13;
             // 
             // lblIdDesaparecido
@@ -95,7 +99,7 @@
             this.lblIdDesaparecido.Location = new System.Drawing.Point(18, 29);
             this.lblIdDesaparecido.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblIdDesaparecido.Name = "lblIdDesaparecido";
-            this.lblIdDesaparecido.Size = new System.Drawing.Size(21, 13);
+            this.lblIdDesaparecido.Size = new System.Drawing.Size(35, 28);
             this.lblIdDesaparecido.TabIndex = 12;
             this.lblIdDesaparecido.Text = "ID:";
             // 
@@ -104,7 +108,7 @@
             this.textBox6.Location = new System.Drawing.Point(154, 568);
             this.textBox6.Margin = new System.Windows.Forms.Padding(1);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(40, 20);
+            this.textBox6.Size = new System.Drawing.Size(40, 36);
             this.textBox6.TabIndex = 9;
             // 
             // label6
@@ -113,43 +117,43 @@
             this.label6.Location = new System.Drawing.Point(45, 568);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(60, 28);
             this.label6.TabIndex = 8;
             this.label6.Text = "label6";
             // 
             // txtPreferenciaSexual
             // 
-            this.txtPreferenciaSexual.Location = new System.Drawing.Point(119, 165);
+            this.txtPreferenciaSexual.Location = new System.Drawing.Point(201, 205);
             this.txtPreferenciaSexual.Margin = new System.Windows.Forms.Padding(1);
             this.txtPreferenciaSexual.Name = "txtPreferenciaSexual";
-            this.txtPreferenciaSexual.Size = new System.Drawing.Size(276, 20);
+            this.txtPreferenciaSexual.Size = new System.Drawing.Size(276, 36);
             this.txtPreferenciaSexual.TabIndex = 7;
             // 
             // lbldui
             // 
             this.lbldui.AutoSize = true;
-            this.lbldui.Location = new System.Drawing.Point(13, 165);
+            this.lbldui.Location = new System.Drawing.Point(10, 208);
             this.lbldui.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbldui.Name = "lbldui";
-            this.lbldui.Size = new System.Drawing.Size(99, 13);
+            this.lbldui.Size = new System.Drawing.Size(164, 28);
             this.lbldui.TabIndex = 6;
             this.lbldui.Text = "Preferencia Sexual:";
             // 
             // txtSexo
             // 
-            this.txtSexo.Location = new System.Drawing.Point(118, 134);
+            this.txtSexo.Location = new System.Drawing.Point(195, 147);
             this.txtSexo.Margin = new System.Windows.Forms.Padding(1);
             this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(200, 20);
+            this.txtSexo.Size = new System.Drawing.Size(200, 36);
             this.txtSexo.TabIndex = 5;
             // 
             // lbltelefono
             // 
             this.lbltelefono.AutoSize = true;
-            this.lbltelefono.Location = new System.Drawing.Point(15, 134);
+            this.lbltelefono.Location = new System.Drawing.Point(13, 150);
             this.lbltelefono.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbltelefono.Name = "lbltelefono";
-            this.lbltelefono.Size = new System.Drawing.Size(34, 13);
+            this.lbltelefono.Size = new System.Drawing.Size(53, 28);
             this.lbltelefono.TabIndex = 4;
             this.lbltelefono.Text = "Sexo:";
             // 
@@ -159,16 +163,16 @@
             this.lbldireccion.Location = new System.Drawing.Point(13, 103);
             this.lbldireccion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbldireccion.Name = "lbldireccion";
-            this.lbldireccion.Size = new System.Drawing.Size(35, 13);
+            this.lbldireccion.Size = new System.Drawing.Size(59, 28);
             this.lbldireccion.TabIndex = 2;
             this.lbldireccion.Text = "Edad:";
             // 
             // txtNombreCompleto
             // 
-            this.txtNombreCompleto.Location = new System.Drawing.Point(118, 60);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(195, 60);
             this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(1);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(205, 20);
+            this.txtNombreCompleto.Size = new System.Drawing.Size(282, 36);
             this.txtNombreCompleto.TabIndex = 3;
             // 
             // lblnombre
@@ -177,7 +181,7 @@
             this.lblnombre.Location = new System.Drawing.Point(15, 63);
             this.lblnombre.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(93, 13);
+            this.lblnombre.Size = new System.Drawing.Size(159, 28);
             this.lblnombre.TabIndex = 2;
             this.lblnombre.Text = "Nombre completo:";
             // 
@@ -189,8 +193,8 @@
             this.grbNavegacion.Controls.Add(this.btnsiguiente);
             this.grbNavegacion.Controls.Add(this.btnprimero);
             this.grbNavegacion.Controls.Add(this.btnanterior);
-            this.grbNavegacion.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbNavegacion.Location = new System.Drawing.Point(10, 344);
+            this.grbNavegacion.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbNavegacion.Location = new System.Drawing.Point(10, 369);
             this.grbNavegacion.Margin = new System.Windows.Forms.Padding(1);
             this.grbNavegacion.Name = "grbNavegacion";
             this.grbNavegacion.Padding = new System.Windows.Forms.Padding(1);
@@ -205,7 +209,7 @@
             this.lblnregistros.Location = new System.Drawing.Point(83, 26);
             this.lblnregistros.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblnregistros.Name = "lblnregistros";
-            this.lblnregistros.Size = new System.Drawing.Size(0, 14);
+            this.lblnregistros.Size = new System.Drawing.Size(0, 18);
             this.lblnregistros.TabIndex = 13;
             // 
             // btnultimo
@@ -259,8 +263,8 @@
             this.grbEdicion.Controls.Add(this.btnBuscar);
             this.grbEdicion.Controls.Add(this.btnModificar);
             this.grbEdicion.Controls.Add(this.btnNuevo);
-            this.grbEdicion.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbEdicion.Location = new System.Drawing.Point(263, 344);
+            this.grbEdicion.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbEdicion.Location = new System.Drawing.Point(265, 369);
             this.grbEdicion.Margin = new System.Windows.Forms.Padding(1);
             this.grbEdicion.Name = "grbEdicion";
             this.grbEdicion.Padding = new System.Windows.Forms.Padding(1);
@@ -271,7 +275,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Location = new System.Drawing.Point(147, 15);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(1);
             this.btnEliminar.Name = "btnEliminar";
@@ -283,7 +287,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(224, 15);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(1);
             this.btnBuscar.Name = "btnBuscar";
@@ -295,7 +299,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(63, 15);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(1);
             this.btnModificar.Name = "btnModificar";
@@ -307,7 +311,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(2, 16);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(1);
             this.btnNuevo.Name = "btnNuevo";
@@ -319,10 +323,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(673, 398);
+            this.button1.Font = new System.Drawing.Font("Gill Sans MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(673, 360);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 40);
+            this.button1.Size = new System.Drawing.Size(115, 66);
             this.button1.TabIndex = 11;
             this.button1.Text = "Volver al menú principal";
             this.button1.UseVisualStyleBackColor = true;

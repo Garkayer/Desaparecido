@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control));
             System.Windows.Forms.Label nombreCompletoLabel;
             System.Windows.Forms.Label fechaEntrevistaLabel;
             System.Windows.Forms.Label fechaNacimientoLabel;
             System.Windows.Forms.Label paisLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control));
             this.busquedaDataSet = new WindowsFormsApp1.BusquedaDataSet();
             this.entrevistadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.entrevistadoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.EntrevistadoTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp1.BusquedaDataSetTableAdapters.TableAdapterManager();
+            this.desaparecidoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.DesaparecidoTableAdapter();
             this.entrevistadoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.entrevistadoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nombreCompletoComboBox = new System.Windows.Forms.ComboBox();
             this.fechaEntrevistaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.fechaNacimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.paisComboBox = new System.Windows.Forms.ComboBox();
             this.desaparecidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.desaparecidoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.DesaparecidoTableAdapter();
             this.desaparecidoDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,6 +76,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidoDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nombreCompletoLabel
+            // 
+            nombreCompletoLabel.AutoSize = true;
+            nombreCompletoLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nombreCompletoLabel.Location = new System.Drawing.Point(21, 50);
+            nombreCompletoLabel.Name = "nombreCompletoLabel";
+            nombreCompletoLabel.Size = new System.Drawing.Size(166, 19);
+            nombreCompletoLabel.TabIndex = 3;
+            nombreCompletoLabel.Text = "Nombre Completo:";
+            // 
+            // fechaEntrevistaLabel
+            // 
+            fechaEntrevistaLabel.AutoSize = true;
+            fechaEntrevistaLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fechaEntrevistaLabel.Location = new System.Drawing.Point(21, 83);
+            fechaEntrevistaLabel.Name = "fechaEntrevistaLabel";
+            fechaEntrevistaLabel.Size = new System.Drawing.Size(143, 19);
+            fechaEntrevistaLabel.TabIndex = 5;
+            fechaEntrevistaLabel.Text = "Fecha Entrevista:";
+            // 
+            // fechaNacimientoLabel
+            // 
+            fechaNacimientoLabel.AutoSize = true;
+            fechaNacimientoLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fechaNacimientoLabel.Location = new System.Drawing.Point(21, 111);
+            fechaNacimientoLabel.Name = "fechaNacimientoLabel";
+            fechaNacimientoLabel.Size = new System.Drawing.Size(158, 19);
+            fechaNacimientoLabel.TabIndex = 7;
+            fechaNacimientoLabel.Text = "Fecha Nacimiento:";
+            // 
+            // paisLabel
+            // 
+            paisLabel.AutoSize = true;
+            paisLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paisLabel.Location = new System.Drawing.Point(21, 147);
+            paisLabel.Name = "paisLabel";
+            paisLabel.Size = new System.Drawing.Size(45, 19);
+            paisLabel.TabIndex = 9;
+            paisLabel.Text = "Pais:";
             // 
             // busquedaDataSet
             // 
@@ -97,6 +137,10 @@
             this.tableAdapterManager.DesaparecidoTableAdapter = this.desaparecidoTableAdapter;
             this.tableAdapterManager.EntrevistadoTableAdapter = this.entrevistadoTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.BusquedaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // desaparecidoTableAdapter
+            // 
+            this.desaparecidoTableAdapter.ClearBeforeFill = true;
             // 
             // entrevistadoBindingNavigator
             // 
@@ -128,6 +172,31 @@
             this.entrevistadoBindingNavigator.TabIndex = 0;
             this.entrevistadoBindingNavigator.Text = "bindingNavigator1";
             this.entrevistadoBindingNavigator.RefreshItems += new System.EventHandler(this.entrevistadoBindingNavigator_RefreshItems);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -162,17 +231,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -196,102 +258,48 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // entrevistadoBindingNavigatorSaveItem
             // 
             this.entrevistadoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.entrevistadoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("entrevistadoBindingNavigatorSaveItem.Image")));
             this.entrevistadoBindingNavigatorSaveItem.Name = "entrevistadoBindingNavigatorSaveItem";
-            this.entrevistadoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.entrevistadoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.entrevistadoBindingNavigatorSaveItem.Text = "Guardar datos";
             this.entrevistadoBindingNavigatorSaveItem.Click += new System.EventHandler(this.entrevistadoBindingNavigatorSaveItem_Click_1);
-            // 
-            // nombreCompletoLabel
-            // 
-            nombreCompletoLabel.AutoSize = true;
-            nombreCompletoLabel.Location = new System.Drawing.Point(69, 70);
-            nombreCompletoLabel.Name = "nombreCompletoLabel";
-            nombreCompletoLabel.Size = new System.Drawing.Size(94, 13);
-            nombreCompletoLabel.TabIndex = 3;
-            nombreCompletoLabel.Text = "Nombre Completo:";
             // 
             // nombreCompletoComboBox
             // 
             this.nombreCompletoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entrevistadoBindingSource, "NombreCompleto", true));
             this.nombreCompletoComboBox.FormattingEnabled = true;
-            this.nombreCompletoComboBox.Location = new System.Drawing.Point(171, 70);
+            this.nombreCompletoComboBox.Location = new System.Drawing.Point(193, 50);
             this.nombreCompletoComboBox.Name = "nombreCompletoComboBox";
             this.nombreCompletoComboBox.Size = new System.Drawing.Size(200, 21);
             this.nombreCompletoComboBox.TabIndex = 4;
             // 
-            // fechaEntrevistaLabel
-            // 
-            fechaEntrevistaLabel.AutoSize = true;
-            fechaEntrevistaLabel.Location = new System.Drawing.Point(69, 100);
-            fechaEntrevistaLabel.Name = "fechaEntrevistaLabel";
-            fechaEntrevistaLabel.Size = new System.Drawing.Size(90, 13);
-            fechaEntrevistaLabel.TabIndex = 5;
-            fechaEntrevistaLabel.Text = "Fecha Entrevista:";
-            // 
             // fechaEntrevistaDateTimePicker
             // 
             this.fechaEntrevistaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.entrevistadoBindingSource, "FechaEntrevista", true));
-            this.fechaEntrevistaDateTimePicker.Location = new System.Drawing.Point(171, 100);
+            this.fechaEntrevistaDateTimePicker.Location = new System.Drawing.Point(193, 76);
             this.fechaEntrevistaDateTimePicker.Name = "fechaEntrevistaDateTimePicker";
             this.fechaEntrevistaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechaEntrevistaDateTimePicker.TabIndex = 6;
             // 
-            // fechaNacimientoLabel
-            // 
-            fechaNacimientoLabel.AutoSize = true;
-            fechaNacimientoLabel.Location = new System.Drawing.Point(69, 130);
-            fechaNacimientoLabel.Name = "fechaNacimientoLabel";
-            fechaNacimientoLabel.Size = new System.Drawing.Size(96, 13);
-            fechaNacimientoLabel.TabIndex = 7;
-            fechaNacimientoLabel.Text = "Fecha Nacimiento:";
-            // 
             // fechaNacimientoDateTimePicker
             // 
             this.fechaNacimientoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.entrevistadoBindingSource, "FechaNacimiento", true));
-            this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(171, 130);
+            this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(193, 104);
             this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
             this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechaNacimientoDateTimePicker.TabIndex = 8;
-            // 
-            // paisLabel
-            // 
-            paisLabel.AutoSize = true;
-            paisLabel.Location = new System.Drawing.Point(69, 163);
-            paisLabel.Name = "paisLabel";
-            paisLabel.Size = new System.Drawing.Size(30, 13);
-            paisLabel.TabIndex = 9;
-            paisLabel.Text = "Pais:";
             // 
             // paisComboBox
             // 
             this.paisComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entrevistadoBindingSource, "Pais", true));
             this.paisComboBox.FormattingEnabled = true;
-            this.paisComboBox.Location = new System.Drawing.Point(171, 160);
+            this.paisComboBox.Location = new System.Drawing.Point(193, 145);
             this.paisComboBox.Name = "paisComboBox";
             this.paisComboBox.Size = new System.Drawing.Size(200, 21);
             this.paisComboBox.TabIndex = 10;
@@ -300,10 +308,6 @@
             // 
             this.desaparecidoBindingSource.DataMember = "Entrevistado_Desaparecido";
             this.desaparecidoBindingSource.DataSource = this.entrevistadoBindingSource;
-            // 
-            // desaparecidoTableAdapter
-            // 
-            this.desaparecidoTableAdapter.ClearBeforeFill = true;
             // 
             // desaparecidoDataGridView
             // 
@@ -317,25 +321,26 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.desaparecidoDataGridView.DataSource = this.desaparecidoBindingSource;
-            this.desaparecidoDataGridView.Location = new System.Drawing.Point(38, 202);
+            this.desaparecidoDataGridView.Location = new System.Drawing.Point(12, 199);
             this.desaparecidoDataGridView.Name = "desaparecidoDataGridView";
-            this.desaparecidoDataGridView.Size = new System.Drawing.Size(546, 220);
+            this.desaparecidoDataGridView.Size = new System.Drawing.Size(591, 220);
             this.desaparecidoDataGridView.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(610, 323);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(684, 403);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 23);
+            this.button1.Size = new System.Drawing.Size(104, 60);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Volver al menú principal";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "IdDesaparecido";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdDesaparecido";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Visible = false;
@@ -343,8 +348,9 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreCompleto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NombreCompleto";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -361,7 +367,7 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "PreferenciaSexual";
-            this.dataGridViewTextBoxColumn5.HeaderText = "PreferenciaSexual";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Preferencia Sexual";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
@@ -374,6 +380,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 511);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.desaparecidoDataGridView);
