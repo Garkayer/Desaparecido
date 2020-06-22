@@ -165,11 +165,11 @@ namespace WindowsFormsApp1
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro de eliminar a " + txtNombreCompleto.Text, "Registro de personas entrevistadas",
+            if (MessageBox.Show("Esta seguro de eliminar a " + txtNombreCompleto.Text, "Registro de personas desaparecidas",
             MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
             {
                 String[] valores = { lblIdDesaparecido.Text };
-                objConexion.mantenimiento_datos(valores, "eliminar");
+                objConexion.mantenimiento_datos_desaparecido(valores, "eliminar");
 
                 actualizarDs();
                 posicion = posicion > 0 ? posicion - 1 : 0;
