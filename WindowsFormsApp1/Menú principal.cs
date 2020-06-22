@@ -44,8 +44,8 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             Program.Principal.Hide();
-            Master Master = new Master();
-            Master.Show();
+            Control Control = new Control();
+            Control.Show();
         }
     }
 }
