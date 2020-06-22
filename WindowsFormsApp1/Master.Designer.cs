@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idDesaparecidoLabel;
-            System.Windows.Forms.Label nombreCompletoLabel;
-            System.Windows.Forms.Label edadLabel;
-            System.Windows.Forms.Label sexoLabel;
-            System.Windows.Forms.Label preferenciaSexualLabel;
-            System.Windows.Forms.Label fecha_de_nacimientoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Master));
+            System.Windows.Forms.Label nombreCompletoLabel;
             this.busquedaDataSet = new WindowsFormsApp1.BusquedaDataSet();
             this.desaparecidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.desaparecidoTableAdapter = new WindowsFormsApp1.BusquedaDataSetTableAdapters.DesaparecidoTableAdapter();
@@ -54,12 +49,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.desaparecidoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.idDesaparecidoComboBox = new System.Windows.Forms.ComboBox();
-            this.nombreCompletoComboBox = new System.Windows.Forms.ComboBox();
-            this.edadComboBox = new System.Windows.Forms.ComboBox();
-            this.sexoComboBox = new System.Windows.Forms.ComboBox();
-            this.preferenciaSexualComboBox = new System.Windows.Forms.ComboBox();
-            this.fecha_de_nacimientoComboBox = new System.Windows.Forms.ComboBox();
             this.entrevistadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,12 +57,9 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entrevistadoDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            idDesaparecidoLabel = new System.Windows.Forms.Label();
+            this.nombreCompletoComboBox = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             nombreCompletoLabel = new System.Windows.Forms.Label();
-            edadLabel = new System.Windows.Forms.Label();
-            sexoLabel = new System.Windows.Forms.Label();
-            preferenciaSexualLabel = new System.Windows.Forms.Label();
-            fecha_de_nacimientoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.busquedaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidoBindingNavigator)).BeginInit();
@@ -81,60 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.entrevistadoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entrevistadoDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // idDesaparecidoLabel
-            // 
-            idDesaparecidoLabel.AutoSize = true;
-            idDesaparecidoLabel.Location = new System.Drawing.Point(24, 58);
-            idDesaparecidoLabel.Name = "idDesaparecidoLabel";
-            idDesaparecidoLabel.Size = new System.Drawing.Size(76, 13);
-            idDesaparecidoLabel.TabIndex = 1;
-            idDesaparecidoLabel.Text = "Desaparecido:";
-            // 
-            // nombreCompletoLabel
-            // 
-            nombreCompletoLabel.AutoSize = true;
-            nombreCompletoLabel.Location = new System.Drawing.Point(24, 85);
-            nombreCompletoLabel.Name = "nombreCompletoLabel";
-            nombreCompletoLabel.Size = new System.Drawing.Size(94, 13);
-            nombreCompletoLabel.TabIndex = 3;
-            nombreCompletoLabel.Text = "Nombre Completo:";
-            // 
-            // edadLabel
-            // 
-            edadLabel.AutoSize = true;
-            edadLabel.Location = new System.Drawing.Point(24, 112);
-            edadLabel.Name = "edadLabel";
-            edadLabel.Size = new System.Drawing.Size(35, 13);
-            edadLabel.TabIndex = 5;
-            edadLabel.Text = "Edad:";
-            // 
-            // sexoLabel
-            // 
-            sexoLabel.AutoSize = true;
-            sexoLabel.Location = new System.Drawing.Point(24, 139);
-            sexoLabel.Name = "sexoLabel";
-            sexoLabel.Size = new System.Drawing.Size(34, 13);
-            sexoLabel.TabIndex = 7;
-            sexoLabel.Text = "Sexo:";
-            // 
-            // preferenciaSexualLabel
-            // 
-            preferenciaSexualLabel.AutoSize = true;
-            preferenciaSexualLabel.Location = new System.Drawing.Point(24, 166);
-            preferenciaSexualLabel.Name = "preferenciaSexualLabel";
-            preferenciaSexualLabel.Size = new System.Drawing.Size(99, 13);
-            preferenciaSexualLabel.TabIndex = 9;
-            preferenciaSexualLabel.Text = "Preferencia Sexual:";
-            // 
-            // fecha_de_nacimientoLabel
-            // 
-            fecha_de_nacimientoLabel.AutoSize = true;
-            fecha_de_nacimientoLabel.Location = new System.Drawing.Point(24, 193);
-            fecha_de_nacimientoLabel.Name = "fecha_de_nacimientoLabel";
-            fecha_de_nacimientoLabel.Size = new System.Drawing.Size(109, 13);
-            fecha_de_nacimientoLabel.TabIndex = 11;
-            fecha_de_nacimientoLabel.Text = "Fecha de nacimiento:";
             // 
             // busquedaDataSet
             // 
@@ -187,7 +119,7 @@
             this.desaparecidoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.desaparecidoBindingNavigator.Name = "desaparecidoBindingNavigator";
             this.desaparecidoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.desaparecidoBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.desaparecidoBindingNavigator.Size = new System.Drawing.Size(846, 25);
             this.desaparecidoBindingNavigator.TabIndex = 0;
             this.desaparecidoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -285,60 +217,6 @@
             this.desaparecidoBindingNavigatorSaveItem.Text = "Guardar datos";
             this.desaparecidoBindingNavigatorSaveItem.Click += new System.EventHandler(this.desaparecidoBindingNavigatorSaveItem_Click_1);
             // 
-            // idDesaparecidoComboBox
-            // 
-            this.idDesaparecidoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "IdDesaparecido", true));
-            this.idDesaparecidoComboBox.FormattingEnabled = true;
-            this.idDesaparecidoComboBox.Location = new System.Drawing.Point(139, 55);
-            this.idDesaparecidoComboBox.Name = "idDesaparecidoComboBox";
-            this.idDesaparecidoComboBox.Size = new System.Drawing.Size(121, 21);
-            this.idDesaparecidoComboBox.TabIndex = 2;
-            // 
-            // nombreCompletoComboBox
-            // 
-            this.nombreCompletoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "NombreCompleto", true));
-            this.nombreCompletoComboBox.FormattingEnabled = true;
-            this.nombreCompletoComboBox.Location = new System.Drawing.Point(139, 82);
-            this.nombreCompletoComboBox.Name = "nombreCompletoComboBox";
-            this.nombreCompletoComboBox.Size = new System.Drawing.Size(121, 21);
-            this.nombreCompletoComboBox.TabIndex = 4;
-            // 
-            // edadComboBox
-            // 
-            this.edadComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "Edad", true));
-            this.edadComboBox.FormattingEnabled = true;
-            this.edadComboBox.Location = new System.Drawing.Point(139, 109);
-            this.edadComboBox.Name = "edadComboBox";
-            this.edadComboBox.Size = new System.Drawing.Size(121, 21);
-            this.edadComboBox.TabIndex = 6;
-            // 
-            // sexoComboBox
-            // 
-            this.sexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "Sexo", true));
-            this.sexoComboBox.FormattingEnabled = true;
-            this.sexoComboBox.Location = new System.Drawing.Point(139, 136);
-            this.sexoComboBox.Name = "sexoComboBox";
-            this.sexoComboBox.Size = new System.Drawing.Size(121, 21);
-            this.sexoComboBox.TabIndex = 8;
-            // 
-            // preferenciaSexualComboBox
-            // 
-            this.preferenciaSexualComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "PreferenciaSexual", true));
-            this.preferenciaSexualComboBox.FormattingEnabled = true;
-            this.preferenciaSexualComboBox.Location = new System.Drawing.Point(139, 163);
-            this.preferenciaSexualComboBox.Name = "preferenciaSexualComboBox";
-            this.preferenciaSexualComboBox.Size = new System.Drawing.Size(121, 21);
-            this.preferenciaSexualComboBox.TabIndex = 10;
-            // 
-            // fecha_de_nacimientoComboBox
-            // 
-            this.fecha_de_nacimientoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "Fecha de nacimiento", true));
-            this.fecha_de_nacimientoComboBox.FormattingEnabled = true;
-            this.fecha_de_nacimientoComboBox.Location = new System.Drawing.Point(139, 190);
-            this.fecha_de_nacimientoComboBox.Name = "fecha_de_nacimientoComboBox";
-            this.fecha_de_nacimientoComboBox.Size = new System.Drawing.Size(121, 21);
-            this.fecha_de_nacimientoComboBox.TabIndex = 12;
-            // 
             // entrevistadoBindingSource
             // 
             this.entrevistadoBindingSource.DataMember = "Entrevistado";
@@ -395,7 +273,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(600, 243);
+            this.button1.Location = new System.Drawing.Point(624, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 23);
             this.button1.TabIndex = 14;
@@ -403,25 +281,43 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // nombreCompletoLabel
+            // 
+            nombreCompletoLabel.AutoSize = true;
+            nombreCompletoLabel.Location = new System.Drawing.Point(12, 51);
+            nombreCompletoLabel.Name = "nombreCompletoLabel";
+            nombreCompletoLabel.Size = new System.Drawing.Size(181, 13);
+            nombreCompletoLabel.TabIndex = 3;
+            nombreCompletoLabel.Text = "Nombre de la persona desaparecida:";
+            // 
+            // nombreCompletoComboBox
+            // 
+            this.nombreCompletoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desaparecidoBindingSource, "NombreCompleto", true));
+            this.nombreCompletoComboBox.FormattingEnabled = true;
+            this.nombreCompletoComboBox.Location = new System.Drawing.Point(199, 51);
+            this.nombreCompletoComboBox.Name = "nombreCompletoComboBox";
+            this.nombreCompletoComboBox.Size = new System.Drawing.Size(223, 21);
+            this.nombreCompletoComboBox.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(586, 284);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(232, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Características de la persona desaparecida";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 575);
+            this.ClientSize = new System.Drawing.Size(846, 575);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.entrevistadoDataGridView);
-            this.Controls.Add(idDesaparecidoLabel);
-            this.Controls.Add(this.idDesaparecidoComboBox);
             this.Controls.Add(nombreCompletoLabel);
             this.Controls.Add(this.nombreCompletoComboBox);
-            this.Controls.Add(edadLabel);
-            this.Controls.Add(this.edadComboBox);
-            this.Controls.Add(sexoLabel);
-            this.Controls.Add(this.sexoComboBox);
-            this.Controls.Add(preferenciaSexualLabel);
-            this.Controls.Add(this.preferenciaSexualComboBox);
-            this.Controls.Add(fecha_de_nacimientoLabel);
-            this.Controls.Add(this.fecha_de_nacimientoComboBox);
             this.Controls.Add(this.desaparecidoBindingNavigator);
             this.Name = "Master";
             this.Text = "Master";
@@ -458,12 +354,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton desaparecidoBindingNavigatorSaveItem;
         private BusquedaDataSetTableAdapters.EntrevistadoTableAdapter entrevistadoTableAdapter;
-        private System.Windows.Forms.ComboBox idDesaparecidoComboBox;
-        private System.Windows.Forms.ComboBox nombreCompletoComboBox;
-        private System.Windows.Forms.ComboBox edadComboBox;
-        private System.Windows.Forms.ComboBox sexoComboBox;
-        private System.Windows.Forms.ComboBox preferenciaSexualComboBox;
-        private System.Windows.Forms.ComboBox fecha_de_nacimientoComboBox;
         private System.Windows.Forms.BindingSource entrevistadoBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pais;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
@@ -472,5 +362,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView entrevistadoDataGridView;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox nombreCompletoComboBox;
+        private System.Windows.Forms.Button button2;
     }
 }

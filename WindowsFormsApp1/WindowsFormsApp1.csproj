@@ -146,6 +146,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteDesaparecidos.rdlc" />
     <None Include="BusquedaDataSet.xsc">
       <DependentUpon>BusquedaDataSet.xsd</DependentUpon>
     </None>
