@@ -53,5 +53,10 @@ namespace WindowsFormsApp1
             Principal Principal = new Principal();
             Principal.Show();
         }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
