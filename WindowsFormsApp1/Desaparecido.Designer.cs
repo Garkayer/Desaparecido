@@ -29,18 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Desaparecido));
-            this.grbDatosDesaparecido = new System.Windows.Forms.GroupBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.lblIdDesaparecido = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPreferenciaSexual = new System.Windows.Forms.TextBox();
-            this.lbldui = new System.Windows.Forms.Label();
-            this.txtSexo = new System.Windows.Forms.TextBox();
-            this.lbltelefono = new System.Windows.Forms.Label();
-            this.lbldireccion = new System.Windows.Forms.Label();
-            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
-            this.lblnombre = new System.Windows.Forms.Label();
             this.grbNavegacion = new System.Windows.Forms.GroupBox();
             this.lblnregistros = new System.Windows.Forms.Label();
             this.btnultimo = new System.Windows.Forms.Button();
@@ -53,137 +41,22 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.grbDatosDesaparecido.SuspendLayout();
+            this.grbDatosDesaparecido = new System.Windows.Forms.GroupBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.lblIdDesaparecido = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPreferenciaSexual = new System.Windows.Forms.TextBox();
+            this.lbldui = new System.Windows.Forms.Label();
+            this.txtSexo = new System.Windows.Forms.TextBox();
+            this.lbltelefono = new System.Windows.Forms.Label();
+            this.lbldireccion = new System.Windows.Forms.Label();
+            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
+            this.lblnombre = new System.Windows.Forms.Label();
             this.grbNavegacion.SuspendLayout();
             this.grbEdicion.SuspendLayout();
+            this.grbDatosDesaparecido.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grbDatosDesaparecido
-            // 
-            this.grbDatosDesaparecido.BackColor = System.Drawing.Color.Yellow;
-            this.grbDatosDesaparecido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbDatosDesaparecido.BackgroundImage")));
-            this.grbDatosDesaparecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.grbDatosDesaparecido.Controls.Add(this.txtEdad);
-            this.grbDatosDesaparecido.Controls.Add(this.lblIdDesaparecido);
-            this.grbDatosDesaparecido.Controls.Add(this.textBox6);
-            this.grbDatosDesaparecido.Controls.Add(this.label6);
-            this.grbDatosDesaparecido.Controls.Add(this.txtPreferenciaSexual);
-            this.grbDatosDesaparecido.Controls.Add(this.lbldui);
-            this.grbDatosDesaparecido.Controls.Add(this.txtSexo);
-            this.grbDatosDesaparecido.Controls.Add(this.lbltelefono);
-            this.grbDatosDesaparecido.Controls.Add(this.lbldireccion);
-            this.grbDatosDesaparecido.Controls.Add(this.txtNombreCompleto);
-            this.grbDatosDesaparecido.Controls.Add(this.lblnombre);
-            this.grbDatosDesaparecido.Enabled = false;
-            this.grbDatosDesaparecido.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDatosDesaparecido.Location = new System.Drawing.Point(10, 20);
-            this.grbDatosDesaparecido.Margin = new System.Windows.Forms.Padding(1);
-            this.grbDatosDesaparecido.Name = "grbDatosDesaparecido";
-            this.grbDatosDesaparecido.Padding = new System.Windows.Forms.Padding(1);
-            this.grbDatosDesaparecido.Size = new System.Drawing.Size(747, 322);
-            this.grbDatosDesaparecido.TabIndex = 8;
-            this.grbDatosDesaparecido.TabStop = false;
-            this.grbDatosDesaparecido.Text = "Datos de persona desaparecida";
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(195, 103);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(1);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(110, 36);
-            this.txtEdad.TabIndex = 13;
-            // 
-            // lblIdDesaparecido
-            // 
-            this.lblIdDesaparecido.AutoSize = true;
-            this.lblIdDesaparecido.Location = new System.Drawing.Point(18, 29);
-            this.lblIdDesaparecido.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblIdDesaparecido.Name = "lblIdDesaparecido";
-            this.lblIdDesaparecido.Size = new System.Drawing.Size(35, 28);
-            this.lblIdDesaparecido.TabIndex = 12;
-            this.lblIdDesaparecido.Text = "ID:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(154, 568);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(40, 36);
-            this.textBox6.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 568);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 28);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "label6";
-            // 
-            // txtPreferenciaSexual
-            // 
-            this.txtPreferenciaSexual.Location = new System.Drawing.Point(201, 205);
-            this.txtPreferenciaSexual.Margin = new System.Windows.Forms.Padding(1);
-            this.txtPreferenciaSexual.Name = "txtPreferenciaSexual";
-            this.txtPreferenciaSexual.Size = new System.Drawing.Size(276, 36);
-            this.txtPreferenciaSexual.TabIndex = 7;
-            // 
-            // lbldui
-            // 
-            this.lbldui.AutoSize = true;
-            this.lbldui.Location = new System.Drawing.Point(10, 208);
-            this.lbldui.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbldui.Name = "lbldui";
-            this.lbldui.Size = new System.Drawing.Size(164, 28);
-            this.lbldui.TabIndex = 6;
-            this.lbldui.Text = "Preferencia Sexual:";
-            // 
-            // txtSexo
-            // 
-            this.txtSexo.Location = new System.Drawing.Point(195, 147);
-            this.txtSexo.Margin = new System.Windows.Forms.Padding(1);
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(200, 36);
-            this.txtSexo.TabIndex = 5;
-            // 
-            // lbltelefono
-            // 
-            this.lbltelefono.AutoSize = true;
-            this.lbltelefono.Location = new System.Drawing.Point(13, 150);
-            this.lbltelefono.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbltelefono.Name = "lbltelefono";
-            this.lbltelefono.Size = new System.Drawing.Size(53, 28);
-            this.lbltelefono.TabIndex = 4;
-            this.lbltelefono.Text = "Sexo:";
-            // 
-            // lbldireccion
-            // 
-            this.lbldireccion.AutoSize = true;
-            this.lbldireccion.Location = new System.Drawing.Point(13, 103);
-            this.lbldireccion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbldireccion.Name = "lbldireccion";
-            this.lbldireccion.Size = new System.Drawing.Size(59, 28);
-            this.lbldireccion.TabIndex = 2;
-            this.lbldireccion.Text = "Edad:";
-            // 
-            // txtNombreCompleto
-            // 
-            this.txtNombreCompleto.Location = new System.Drawing.Point(195, 60);
-            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(1);
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(362, 36);
-            this.txtNombreCompleto.TabIndex = 3;
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(15, 63);
-            this.lblnombre.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(159, 28);
-            this.lblnombre.TabIndex = 2;
-            this.lblnombre.Text = "Nombre completo:";
             // 
             // grbNavegacion
             // 
@@ -332,6 +205,134 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // grbDatosDesaparecido
+            // 
+            this.grbDatosDesaparecido.BackColor = System.Drawing.Color.Yellow;
+            this.grbDatosDesaparecido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbDatosDesaparecido.BackgroundImage")));
+            this.grbDatosDesaparecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.grbDatosDesaparecido.Controls.Add(this.txtEdad);
+            this.grbDatosDesaparecido.Controls.Add(this.lblIdDesaparecido);
+            this.grbDatosDesaparecido.Controls.Add(this.textBox6);
+            this.grbDatosDesaparecido.Controls.Add(this.label6);
+            this.grbDatosDesaparecido.Controls.Add(this.txtPreferenciaSexual);
+            this.grbDatosDesaparecido.Controls.Add(this.lbldui);
+            this.grbDatosDesaparecido.Controls.Add(this.txtSexo);
+            this.grbDatosDesaparecido.Controls.Add(this.lbltelefono);
+            this.grbDatosDesaparecido.Controls.Add(this.lbldireccion);
+            this.grbDatosDesaparecido.Controls.Add(this.txtNombreCompleto);
+            this.grbDatosDesaparecido.Controls.Add(this.lblnombre);
+            this.grbDatosDesaparecido.Enabled = false;
+            this.grbDatosDesaparecido.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbDatosDesaparecido.Location = new System.Drawing.Point(10, 20);
+            this.grbDatosDesaparecido.Margin = new System.Windows.Forms.Padding(1);
+            this.grbDatosDesaparecido.Name = "grbDatosDesaparecido";
+            this.grbDatosDesaparecido.Padding = new System.Windows.Forms.Padding(1);
+            this.grbDatosDesaparecido.Size = new System.Drawing.Size(747, 322);
+            this.grbDatosDesaparecido.TabIndex = 8;
+            this.grbDatosDesaparecido.TabStop = false;
+            this.grbDatosDesaparecido.Text = "Datos de persona desaparecida";
+            this.grbDatosDesaparecido.Enter += new System.EventHandler(this.grbDatosDesaparecido_Enter);
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(195, 103);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(1);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(110, 36);
+            this.txtEdad.TabIndex = 13;
+            // 
+            // lblIdDesaparecido
+            // 
+            this.lblIdDesaparecido.AutoSize = true;
+            this.lblIdDesaparecido.Location = new System.Drawing.Point(18, 29);
+            this.lblIdDesaparecido.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblIdDesaparecido.Name = "lblIdDesaparecido";
+            this.lblIdDesaparecido.Size = new System.Drawing.Size(35, 28);
+            this.lblIdDesaparecido.TabIndex = 12;
+            this.lblIdDesaparecido.Text = "ID:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(154, 568);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(1);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(40, 36);
+            this.textBox6.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(45, 568);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 28);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "label6";
+            // 
+            // txtPreferenciaSexual
+            // 
+            this.txtPreferenciaSexual.Location = new System.Drawing.Point(201, 205);
+            this.txtPreferenciaSexual.Margin = new System.Windows.Forms.Padding(1);
+            this.txtPreferenciaSexual.Name = "txtPreferenciaSexual";
+            this.txtPreferenciaSexual.Size = new System.Drawing.Size(276, 36);
+            this.txtPreferenciaSexual.TabIndex = 7;
+            // 
+            // lbldui
+            // 
+            this.lbldui.AutoSize = true;
+            this.lbldui.Location = new System.Drawing.Point(10, 208);
+            this.lbldui.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lbldui.Name = "lbldui";
+            this.lbldui.Size = new System.Drawing.Size(164, 28);
+            this.lbldui.TabIndex = 6;
+            this.lbldui.Text = "Preferencia Sexual:";
+            // 
+            // txtSexo
+            // 
+            this.txtSexo.Location = new System.Drawing.Point(195, 147);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(1);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(200, 36);
+            this.txtSexo.TabIndex = 5;
+            // 
+            // lbltelefono
+            // 
+            this.lbltelefono.AutoSize = true;
+            this.lbltelefono.Location = new System.Drawing.Point(13, 150);
+            this.lbltelefono.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lbltelefono.Name = "lbltelefono";
+            this.lbltelefono.Size = new System.Drawing.Size(53, 28);
+            this.lbltelefono.TabIndex = 4;
+            this.lbltelefono.Text = "Sexo:";
+            // 
+            // lbldireccion
+            // 
+            this.lbldireccion.AutoSize = true;
+            this.lbldireccion.Location = new System.Drawing.Point(13, 103);
+            this.lbldireccion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lbldireccion.Name = "lbldireccion";
+            this.lbldireccion.Size = new System.Drawing.Size(59, 28);
+            this.lbldireccion.TabIndex = 2;
+            this.lbldireccion.Text = "Edad:";
+            // 
+            // txtNombreCompleto
+            // 
+            this.txtNombreCompleto.Location = new System.Drawing.Point(195, 60);
+            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(1);
+            this.txtNombreCompleto.Name = "txtNombreCompleto";
+            this.txtNombreCompleto.Size = new System.Drawing.Size(362, 36);
+            this.txtNombreCompleto.TabIndex = 3;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(15, 63);
+            this.lblnombre.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(159, 28);
+            this.lblnombre.TabIndex = 2;
+            this.lblnombre.Text = "Nombre completo:";
+            // 
             // Desaparecido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,11 +345,11 @@
             this.Name = "Desaparecido";
             this.Text = "Desaparecido";
             this.Load += new System.EventHandler(this.Desaparecido_Load);
-            this.grbDatosDesaparecido.ResumeLayout(false);
-            this.grbDatosDesaparecido.PerformLayout();
             this.grbNavegacion.ResumeLayout(false);
             this.grbNavegacion.PerformLayout();
             this.grbEdicion.ResumeLayout(false);
+            this.grbDatosDesaparecido.ResumeLayout(false);
+            this.grbDatosDesaparecido.PerformLayout();
             this.ResumeLayout(false);
 
         }

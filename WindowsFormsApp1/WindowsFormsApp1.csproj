@@ -97,6 +97,12 @@
       <DependentUpon>BusquedaEntrevistado.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion_db.cs" />
+    <Compile Include="Contacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacto.Designer.cs">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BusquedaEntrevistado.resx">
       <DependentUpon>BusquedaEntrevistado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacto.resx">
+      <DependentUpon>Contacto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>

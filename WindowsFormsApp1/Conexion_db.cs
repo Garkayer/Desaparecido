@@ -40,11 +40,14 @@ namespace WindowsFormsApp1
             miAdaptadorDatos.SelectCommand = comandosSQL;
             miAdaptadorDatos.Fill(ds, "Desaparecido");
 
+            comandosSQL.CommandText = "select * from Registro";
+            miAdaptadorDatos.SelectCommand = comandosSQL;
+            miAdaptadorDatos.Fill(ds, "Registro");
 
-            
 
 
-            
+
+
 
             return ds;
         }
@@ -126,6 +129,41 @@ namespace WindowsFormsApp1
             }
             procesarSQL(sql);
         }
+
+        public void Contacto(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+
+                sql = "INSERT INTO Registro (Telefono, UltimaVez, Nombre) VALUES(" +
+
+                    "'" + datos[1] + "'," +
+                    "'" + datos[2] + "'," +
+                    "'" + datos[3] + "'" +
+                    ")";
+
+            }
+
+            else if (accion == "modificar")
+            {
+
+                sql = "UPDATE Registro SET " +
+                " Telefono              = '" + datos[1] + "'," +
+                " UltimaVez           = '" + datos[2] + "'," +
+                " Nombre            = '" + datos[3] + "'," +
+                " WHERE IdRegistro     = '" + datos[0] + "'";
+
+
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE Registro FROM Registro WHERE IdRegistro='" + datos[0] + "'";
+
+            }
+            procesarSQL(sql);
+        }
+
 
         void procesarSQL(String sql)
         {

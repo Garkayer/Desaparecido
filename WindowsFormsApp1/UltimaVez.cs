@@ -41,5 +41,11 @@ namespace WindowsFormsApp1
             this.registroTableAdapter.Fill(this.busquedaDataSet1.Registro);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Principal Principal = new Principal();
+            Principal.Show();
+        }
     }
 }

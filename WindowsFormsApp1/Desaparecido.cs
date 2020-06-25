@@ -196,6 +196,11 @@ namespace WindowsFormsApp1
             Principal.Show();
 
         }
+
+        private void grbDatosDesaparecido_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

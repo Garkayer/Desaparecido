@@ -47,5 +47,19 @@ namespace WindowsFormsApp1
             Control Control = new Control();
             Control.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Program.Principal.Hide();
+            UltimaVez UltimaVez = new UltimaVez();
+            UltimaVez.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Program.Principal.Hide();
+            Contacto Contacto = new Contacto();
+            Contacto.Show();
+        }
     }
 }
