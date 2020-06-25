@@ -90,7 +90,7 @@
             this.txtEdad.Location = new System.Drawing.Point(195, 103);
             this.txtEdad.Margin = new System.Windows.Forms.Padding(1);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(205, 36);
+            this.txtEdad.Size = new System.Drawing.Size(110, 36);
             this.txtEdad.TabIndex = 13;
             // 
             // lblIdDesaparecido
@@ -172,7 +172,7 @@
             this.txtNombreCompleto.Location = new System.Drawing.Point(195, 60);
             this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(1);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(282, 36);
+            this.txtNombreCompleto.Size = new System.Drawing.Size(362, 36);
             this.txtNombreCompleto.TabIndex = 3;
             // 
             // lblnombre

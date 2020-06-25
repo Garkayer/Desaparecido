@@ -306,10 +306,10 @@
             // 
             // txtNombreCompleto
             // 
-            this.txtNombreCompleto.Location = new System.Drawing.Point(174, 96);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(169, 92);
             this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(1);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(205, 25);
+            this.txtNombreCompleto.Size = new System.Drawing.Size(286, 25);
             this.txtNombreCompleto.TabIndex = 3;
             // 
             // lblnombre

@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BusquedaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusquedaDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BusquedaDesaparecido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +123,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UltimaVez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimaVez.Designer.cs">
+      <DependentUpon>UltimaVez.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BusquedaDesaparecido.resx">
       <DependentUpon>BusquedaDesaparecido.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UltimaVez.resx">
+      <DependentUpon>UltimaVez.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="BusquedaDataSet.xsc">
       <DependentUpon>BusquedaDataSet.xsd</DependentUpon>
     </None>
@@ -156,6 +170,17 @@
     </None>
     <None Include="BusquedaDataSet.xss">
       <DependentUpon>BusquedaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BusquedaDataSet1.xsc">
+      <DependentUpon>BusquedaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BusquedaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BusquedaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BusquedaDataSet1.xss">
+      <DependentUpon>BusquedaDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
